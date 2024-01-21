@@ -31,6 +31,15 @@
 	justify-content: center;
 
 	color: @white;
+
+	@media @tablet{
+		top: 13rem;
+		left: 3.8rem;
+	}
+
+	@media (max-width: 850px){
+		top: 10rem;
+	}
 }
 
 .intro__headline {
@@ -64,6 +73,10 @@
 
 	@media @tablet {
 		margin-bottom: 2rem;
+		width: 38rem;
+	}
+
+	@media (max-width: 850px) {
 		width: 38rem;
 	}
 }
@@ -118,7 +131,9 @@
 		padding: 0 2.4rem;
 	}
 
-
+	@media (max-width: 850px) {
+		padding: 0 2.6rem;
+	}
 }
 
 .intro__label {
