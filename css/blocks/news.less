@@ -1,0 +1,62 @@
+// main: ../style.less
+
+.news {
+	width: 100%;
+	padding: 2.4rem 6.4rem;
+
+	@media @tablet {
+		padding: 2.4rem 2rem;
+	}
+}
+
+.news__list {
+	display: flex;
+	justify-content: space-around;
+
+	
+}
+
+.news__item {
+	width: 165px;
+	padding-top: 16px;
+	padding-left: 32px;
+
+
+	border-top: 1px solid rgba(@greenText, .2);
+
+	color: rgba(@greenText, .8);
+	font-size: 15px;
+
+	position: relative;
+}
+
+.news__item-img{
+	width: 24px;
+	height: 24px;
+
+	position: absolute;
+	top: 50% - 24px;
+	left: 0;
+
+	background-repeat: no-repeat;
+
+	
+	&--1 {
+		background: url(../img/icons/ted.svg);
+	}
+	&--2 {
+		background: url(../img/icons/newYorkTimes.svg);
+	}
+	&--3 {
+		background: url(../img/icons/stateScoop.svg);
+	}
+	&--4 {
+		background: url(../img/icons/associatedPress.svg);
+	}
+	&--5 {
+		background: url(../img/icons/time.svg);
+	}
+	&--6 {
+		background: url(../img/icons/freethink.svg);
+	}
+}

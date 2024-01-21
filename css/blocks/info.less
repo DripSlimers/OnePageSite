@@ -1,0 +1,91 @@
+// main: ../style.less
+
+.info__container {
+	background-color: @primary;
+	padding: 0 6.3rem 8.8rem;
+
+	@media (max-width: 1024px) {
+		padding: 0 6.3rem 2rem;
+	}
+	@media @tablet {
+		padding: 2rem;
+	}
+
+}
+
+.info__image {
+	background-color: #F4F5F5;
+}
+
+.info__information {
+	width: 100%;
+	display: flex;
+
+	@media @tablet {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		flex-direction: column;
+	}
+}
+
+.info__headline-block {
+	width: 50%;
+	display: flex;
+    justify-content: center;
+
+	@media @tablet {
+		margin-bottom: 3rem;	
+	}
+}
+.info__headline {
+	max-width: 424px;
+	font-family: @headline;
+	font-size: 31px;
+	line-height: 38px;
+	letter-spacing: 1.2px;
+	color: @greenText;
+
+	@media @tablet {
+		min-width: 44rem;
+	}
+}
+
+.info__blocks {
+	width: 50%;
+	display: grid;
+	font-size: 12px;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 48px;
+	grid-row-gap: 36px;
+
+	@media @tablet {
+		width: 80%;;
+	}
+}
+.info__block {
+	max-width: 25rem;
+	max-height: 15rem;
+
+}
+.info__block-head {
+	display: block;
+	font-family: @text;
+	font-size: 15px;
+	line-height: 24px;
+	color: @greenText;
+	white-space: nowrap;
+
+	margin-bottom: 4px;
+
+	@media @tablet {
+		font-size: 2rem;
+	}
+}
+.info__block-text {
+	color: rgba(@greenText, .6);
+
+	@media @tablet {
+		font-size: 1.4rem;
+	}
+}

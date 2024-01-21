@@ -1,0 +1,70 @@
+// main: ../style.less
+
+.nav {
+	margin-right: 80px;
+
+	@media @tablet {
+		display: none;
+	}
+}
+
+.nav__list {
+	display: flex;
+
+	list-style: none;
+}
+	
+.nav__item {
+	margin-right: 51px;
+
+	&:last-child {
+		margin-left: -19px;
+		margin-right: 0;
+	}
+	
+	font-size: 16px;
+	// font-size: 13px; изначально
+	font-family: @text;
+	line-height: 16px;
+
+	color: @white;
+
+	position: relative;
+
+	
+	
+}
+
+.nav__link {
+	text-decoration: none;
+	color: @white;
+
+	padding-bottom: 2px;
+	
+
+	&:after {
+		content: "";
+
+		position: absolute;
+		bottom: -2px;
+		left: 0;
+
+		background-color: @white;
+	
+		width: 0;
+		height: 1px;
+		z-index: 1;
+
+		transition: width .16s ease-in-out;
+	}
+
+	&:hover,
+	&--active {
+		color: inherit;
+		
+		&:after {
+			width: 100%;
+		}
+	}	
+
+}

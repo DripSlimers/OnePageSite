@@ -1,0 +1,106 @@
+// main: ../style.less
+
+.footer {
+	padding-top: 11.2rem;
+	// height: 67rem;
+	
+	background-color: #001414;
+	
+	
+}
+
+.footer__container {
+	padding: 0 6.4rem; 
+
+	@media @tablet {
+		padding: 0 2.4rem;
+	}
+}
+
+.footer__content {
+	display: flex;
+	padding-right: 10rem;
+
+	padding-bottom: 13.6rem;
+
+	position: relative;
+	
+}
+.footer__block {
+
+	margin-right: 13.4rem;
+
+
+	&--right {
+		margin-right: 0;
+
+
+		position: absolute;
+
+		top: 0;
+		right: 6.4rem;
+	}
+
+	@media @tablet {
+		margin-right: 8%;
+
+		&--right {
+			margin-right: 0rem;
+			right: 0;
+		}
+	}
+}
+.footer__block-head {
+	font-family: @text;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	letter-spacing: 1px;
+	color: #7D9798;
+
+	position: relative;
+
+	padding-bottom: 2.4rem;
+
+	&:after {
+		content: "";
+
+		width: 1.6rem;
+		height: 1px;
+
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		background-color: #25B895;
+	}
+
+
+}
+
+.footer__list {
+	display: flex;
+	flex-direction: column;
+
+	padding-top: 2.4rem;
+
+	&--right {
+		padding-right: 2rem;
+	}
+}
+.footer__item {
+	height: 3rem;
+}
+
+.footer__link {
+	color: #edeceb;
+
+	font-family: @text;
+	font-size: 1.5rem;
+	line-height: 3rem;
+
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

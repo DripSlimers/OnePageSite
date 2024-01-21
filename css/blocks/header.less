@@ -1,0 +1,36 @@
+// main: ../style.less
+
+
+.header {
+	display: flex;
+	width: 100vw;
+
+	padding: @headerVerticalPaddings 0;
+	
+	position: fixed;
+	z-index: @headerZ-index;
+
+	background-color: rgba(@black, .3);
+
+	justify-content: space-between;
+	align-items: center;
+
+	@media @tablet {
+		background-color: rgba(@greenText, .6);
+		justify-content: space-between;
+		padding: 0 3rem;
+	}
+}
+
+.header__logo {
+	margin-top: calc(17px - @headerVerticalPaddings);
+	margin-left: 64px;
+
+}
+
+.header__logo-img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+

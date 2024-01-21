@@ -1,0 +1,113 @@
+// main: ../style.less
+
+.approach {
+	display: flex;
+
+	margin: 0 auto;
+
+	background-color: @primary;
+	font-family: @text;
+}
+
+.approach__left {
+	display: flex;
+	flex-direction: column;
+
+	padding: 115px 64px;
+
+	flex-grow: 1;
+
+	@media @tablet {
+		padding: 8.5rem 2rem 0 2rem;
+	}
+}
+
+.approach__headline {
+	font-size: 22px;
+	line-height: 22px;
+	color: @greenText;
+
+	margin-bottom: 14px;
+}
+
+.approach__text {
+	width: 450px;
+	font-size: 15px;
+	line-height: 24px;
+	color: rgba(@greenText, .8);
+	
+	margin-bottom: 28px;
+}
+
+.approach__button {
+	width: fit-content;
+	font-size: 13px;
+	line-height: 20px;
+	color: @greenBtn;
+
+	border: 1px solid rgba(@greenText, .2);
+	border-radius: 80px;
+
+	padding: 17px 33px;
+
+	letter-spacing: 0.02px;
+	text-align: center;
+
+	background: transparent;
+
+	transition: background .2s;
+
+	&:hover {
+		background: @greenBtn;
+		color: @white;
+	}
+
+}
+
+.approach__right {
+	display: flex;
+	max-height: 42.6rem;
+	padding: 8rem 0;
+	min-width: 37rem;
+
+	flex-grow: 2;
+
+	margin-right: 6.2rem;
+
+	@media @tablet {
+		padding: 3rem;
+	}
+}
+
+.approach__image-container {
+
+	width: 100%;
+	overflow: hidden;
+
+
+	&:not(:last-child) {
+		margin-right: .8rem;
+
+		@media @tablet {
+			margin-right: 10rem;
+			border-radius: 2rem;
+			// margin-bottom: 6.5rem;
+		}
+
+	}
+
+
+	@media @tablet {
+		&:last-child { 
+			display: none;
+		}
+	}
+}
+
+.approach__image{
+	height: 100%;
+	object-fit: cover;
+
+	border-radius: 1.5rem;
+}
+

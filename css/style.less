@@ -1,0 +1,54 @@
+// compress: true
+
+@import "vars";
+@import "vendor/reset.less";
+// @import "container";
+
+*, 
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-size: 10px;
+}
+
+body {
+	//default
+	// width: 1280px;
+
+	width: 100%;
+	margin: 0 auto;
+
+	font-family: @headline;
+	font-family: @text;
+	font-size: 1rem;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+// Blocks
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/btn";
+@import "blocks/intro";
+@import "blocks/container";
+@import "blocks/about";
+@import "blocks/approach";
+@import "blocks/news";
+@import "blocks/forest";
+@import "blocks/partners";
+@import "blocks/info";
+@import "blocks/articles";
+@import "blocks/coverage";
+@import "blocks/footer";
+@import "blocks/privacy";
+@import "blocks/burger";
