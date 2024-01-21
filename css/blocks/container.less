@@ -8,6 +8,26 @@
 	padding: 12rem 62rem; // default
 }
 
+.container--mobile {
+	padding: 0 1.5rem;
+
+	@media @tablet {
+		padding: 0rem 6.4rem;
+	}
+
+	@media (max-width: 480px) {
+		padding: 5rem 6.4rem;
+	}
+
+	@media (max-width: 430px) {
+		padding: 0rem 5rem;
+	}
+
+	@media (max-width: 380px) {
+		padding: 0rem 3rem;
+	}
+}
+
 .container--tablet {
 	padding: 0 6.4rem;
 

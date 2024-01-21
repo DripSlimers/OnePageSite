@@ -7,6 +7,10 @@
 
 	background-color: @primary;
 	font-family: @text;
+
+	@media (max-width: 480px) {
+		flex-direction: column;
+	}
 }
 
 .approach__left {
@@ -23,6 +27,10 @@
 
 	@media (max-width: 850px) {
 		padding: 11.5rem 1.6rem;
+	}
+
+	@media (max-width: 850px) {
+		padding: 3.5rem 1.6rem;
 	}
 }
 
@@ -41,6 +49,14 @@
 	color: rgba(@greenText, .8);
 	
 	margin-bottom: 28px;
+
+	@media (max-width: 430px) {
+		width: 40rem;
+	}
+
+	@media (max-width: 400px) {
+		width: 100%;
+	}
 }
 
 .approach__button {
@@ -84,6 +100,10 @@
 
 	@media (max-width: 850px) {
 		margin-right: 2.2rem;
+	}
+
+	@media (max-width: 480px) {
+		display: none;
 	}
 }
 

@@ -17,7 +17,11 @@
 	display: flex;
 	justify-content: space-around;
 
-	
+	@media (max-width: 480px) {
+		font-size: 1.6rem;
+		display: flex;
+		flex-wrap: wrap
+	}
 }
 
 .news__item {
@@ -32,6 +36,10 @@
 	font-size: 15px;
 
 	position: relative;
+
+	@media (max-width: 480px) {
+		margin-bottom: 1.4rem;
+	}
 }
 
 .news__item-img{
